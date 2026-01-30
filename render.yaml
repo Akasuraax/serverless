@@ -1,3 +1,9 @@
+databases:
+  - name: db
+    postgresMajorVersion: '18'
+    plan: free
+    region: frankfurt
+
 services:
   - type: web
     name: my-web-service
@@ -7,8 +13,3 @@ services:
     buildCommand: npm install
     startCommand: npm start
     autoDeploy: true
-databases:
-  - name: db
-    postgresMajorVersion: '18'
-    plan: free
-    region: frankfurt
