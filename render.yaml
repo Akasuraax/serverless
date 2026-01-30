@@ -10,5 +10,5 @@ services:
 databases:
   - name: db
     postgresMajorVersion: '18'
-    plan: basic-256mb
+    plan: free
     region: frankfurt
